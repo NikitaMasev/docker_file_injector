@@ -1,0 +1,21 @@
+name: docker_file_injector
+description: A sample command-line application.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.1.0
+
+dependencies:
+  meta: ^1.11.0
+  dartssh2: ^2.8.2
+  envied: ^0.5.2
+  launchable_interfaces:
+    git:
+      url: https://github.com/NikitaMasev/launchable_interfaces.git
+      ref: main
+
+dev_dependencies:
+  lints: ^2.0.0
+  envied_generator: ^0.5.2
+  build_runner:
