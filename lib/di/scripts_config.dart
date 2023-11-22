@@ -9,6 +9,8 @@ Future<Executable<void>> configDockerFileInjector() async {
     sshDataProvider: sshDataProvider,
     fileName: fileName,
     containerId: containerId,
-    pathCopy: pathCopyFile,
+    pathCopyTmp: pathTmpCopyFile,
+    pathCopyDocker: pathDockerCopyFile,
+    passwordRoot: passwordRoot,
   );
 }

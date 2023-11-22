@@ -5,7 +5,7 @@ import 'package:launchable_interfaces/launchable_interfaces.dart';
 
 Future<Executable<SshData>> configSshDataProvider() async => SshConnector(
       ip: ip,
-      port: port,
+      port: portSsh,
       username: usernameSsh,
       password: passwordSsh,
     );
