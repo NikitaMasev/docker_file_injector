@@ -16,8 +16,8 @@ abstract class Env {
   static const String passwordRoot = _Env.passwordRoot;
   @EnviedField(varName: 'CONTAINER_ID')
   static const String containerId = _Env.containerId;
-  @EnviedField(varName: 'FILE_NAME')
-  static const String fileName = _Env.fileName;
+  @EnviedField(varName: 'FILES_INJECTING')
+  static const String filesInjecting = _Env.filesInjecting;
   @EnviedField(varName: 'PATH_FILE_TMP')
   static const String pathFileTmp = _Env.pathFileTmp;
   @EnviedField(varName: 'PATH_FILE_DOCKER')

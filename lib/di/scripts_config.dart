@@ -5,9 +5,17 @@ import 'package:launchable_interfaces/launchable_interfaces.dart';
 
 Future<Executable<void>> configDockerFileInjector() async {
   final sshDataProvider = await configSshDataProvider();
+  final filesInjection = <String>[];
+
+  if (isOneFileInjecting) {
+    filesInjection.add(getOneFileInjecting);
+  } else {
+    filesInjection.addAll(getFilesInjecting);
+  }
+
   return DockerFileInjectorScript(
     sshDataProvider: sshDataProvider,
-    fileName: fileName,
+    filesInjecting: filesInjection,
     containerId: containerId,
     pathCopyTmp: pathTmpCopyFile,
     pathCopyDocker: pathDockerCopyFile,

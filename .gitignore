@@ -43,4 +43,6 @@ app.*.map.json
 *.json
 *.env
 *.g.dart
+*.jks
+*.properties
 
